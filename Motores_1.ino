@@ -24,8 +24,8 @@ void setup() {
 void loop() {
     int jsA, jsB; // valores de los joysticks (eje x)
     int speedA, speedB; // valores de velocidad de ambos motores
- jsA = analogRead(A0); // leemos ambos joysticks
- jsB = analogRead(A1);
+ jsA = analogRead(jsAP); // leemos ambos joysticks
+ jsB = analogRead(jsBP);
 
  if((jsA>470) && (jsA<540)) { // como los joysticks son imprecisos, establecemos un rango de 470 a 540
   analogWrite(en_A, 0);       // como una posición central y de reposo para mantener el motor en 0s
